@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="contain">
+<input id="inp" value="" type="text" required><br><br>
+<div class="con"><button id="btnS" >Save input</button> <br>
+    <button id="btn" >Save tab</button><br>
+    
+    <button id="del">Clear All</button></div>
+</div>
+
+<div class="container" style="text-align: center; list-style: none;"><h3 style="color: aliceblue;text-align: center;">__Saved Items__</h3><ul id="ul" style="list-style: none;"></ul></div>
+
+ <style>
+     button{
+         background-color: green;
+         border-radius: 6%;
+         color: white;
+     }
+     #inp{
+        
+         width: 50%;
+         margin: auto;
+         box-shadow: 50px,20px,25px,palegoldenrod;
+         padding: auto;
+         align-self: center;
+         margin-left: 20%;
+
+     }
+     .contain{
+         margin: auto;
+         align-self: center;
+         justify-content: center;
+        
+
+     }
+     .con{
+         margin: auto;
+         margin-left: 20%;
+     }
+     a{
+        text-decoration: none;
+        color: white;
+     }
+     li{
+         list-style:decimal;
+         color: white;
+         list-style-type:square;
+     }
+    
+     body{
+         background: rgba(0, 0, 0, 0.425);
+         min-height: 200px;
+       
+         
+     }
+     @media only screen and (max-width: 600px){
+.contain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+input{
+    width: 80%;
+}
+button{
+    
+}
+     }
+ </style>
+<script src="script.js"></script>
+
+</body>
+</html>
